@@ -3,11 +3,11 @@ const userManager = require('./UserManager')
 const manager = new userManager()
 
 let user ={
-    first_name: "Fantasma",
-    last_name: "Patriarcado",
+    first_name: "asdf",
+    last_name: "asdf",
     user_name: "lo de arriba es mentira",
-    age: 23,
-    mail: "semeescuchaoqueloque@outlook.com"
+    age: 33,
+    mail: "semeescuchaoqueloque@outlook.com",
 }
 
 // manager.findAllUsers().then(res=> console.log(res))
@@ -18,4 +18,6 @@ let user ={
 
 // manager.createUser(user).then(res=>console.log(res))
 
-manager.deleteAll()
+manager.updateUser(2, user).then(res=>console.log(res))
+
+// manager.deleteAll()

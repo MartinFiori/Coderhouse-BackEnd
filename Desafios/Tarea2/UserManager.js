@@ -60,24 +60,28 @@ class UserManager {
         if(!id) return {status:"error", message: "id missing"}
         let data = await fs.promises.readFile(pathToUsers, 'utf-8', null, 2)
         let users = JSON.parse(data)
-        let deletedUser = users.filter(x=> x.id !== id)
+        let deletedUser = users.filter(x=> x.id !== parseInt(id))
         await fs.promises.writeFile(pathToUsers, JSON.stringify(deletedUser, null, 2))
         return {status: "success", message: deletedUser}
     }
     // Updating user's values
-    updateUser = async (id)=>{
+    updateUser = async (id, updatedUser)=>{
         if(!id) return {status:"error", error: "id needed"}
         if(fs.existsSync(pathToUsers)){
             let data = await fs.promises.readFile(pathToUsers, 'utf-8', null, 2)
             let users = JSON.parse(data)
             let newUsers = users.map(user=>{
-                if(user.id === id ){
-
+                if(user.id === parseInt(id) ){
+                    // This will be the user updated from index.js
+                    updatedUser.id = id
+                    return updatedUser
                 }
                 else{
                     return user
                 }
             })
+            await fs.promises.writeFile(pathToUsers, JSON.stringify(newUsers, null, 2))
+            return {status:"success", message:"user updated"}
         }
     }
     // Clearing user's db
