@@ -25,7 +25,6 @@ app.get('/products', async (req, res)=>{
 });
 
 app.get('/randomProduct',async (req,res)=>{
-    // if (fs.existsSync(path)) {
         const dataRequest = await fs.promises.readFile(path, 'utf-8',null,2)
         const data =  JSON.parse(dataRequest)
         let randomNumber = Math.floor(Math.random()*(data.length))

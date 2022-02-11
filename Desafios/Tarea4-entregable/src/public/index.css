@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.productsContainer{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.productsForm{
+    display: flex;
+    flex-direction: column;
+    width: 325px;
+    margin: 5% auto 2%;
+    background-color: #FFAA8D;
+    padding: 2rem;
+    color: #000;
+    border-radius: 5px;
+}
+
+.productsForm label {
+    font-size: 18px;
+    margin-bottom: .5rem;
+    font-weight: 700;
+}
+
+.productsForm input{
+    margin-bottom: 1rem;
+}
+
+.productsForm input[type="text"],
+.productsForm input[type="number"]{
+    border: none;
+    -webkit-appearance: none;
+    padding: .5em;
+    outline: none;
+    color: #000;
+    font-weight: 500;
+    border-bottom: 3px solid #CB2821;
+    background-color: transparent;
+}
+
+.productsForm input[type="submit"]{
+    margin-inline: auto;
+    width: 50%;
+    outline: none;
+    border: 3px solid #CB2821;
+    padding: 1em;
+    cursor: pointer;
+    background: transparent;
+    margin-top: 1rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    border-radius: 5px;
+    transition: all 250ms ease;
+}
+
+.productsForm input[type="submit"]:hover{
+    background: #CB2821;
+    color: #fff;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+.card{
+    width: 150px;
+    margin: 2rem;
+    border: 2px solid #CB2821;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.card-title,
+.card-stock{
+    text-align: center;
+    margin-bottom: .5em;
+    text-transform: capitalize;
+}
+
+
+.card img{
+    width: 100%;
+    border-radius: 5px;
+}

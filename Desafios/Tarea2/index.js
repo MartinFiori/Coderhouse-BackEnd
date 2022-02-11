@@ -10,7 +10,7 @@ let user ={
     mail: "semeescuchaoqueloque@outlook.com",
 }
 
-// manager.findAllUsers().then(res=> console.log(res))
+manager.findAllUsers().then(res=> console.table(res))
 
 // manager.deleteById(3).then(res=>console.log(res))
 
@@ -18,6 +18,8 @@ let user ={
 
 // manager.createUser(user).then(res=>console.log(res))
 
-manager.updateUser(2, user).then(res=>console.log(res))
+// manager.updateUser(2, user).then(res=>console.log(res))
+
+
 
 // manager.deleteAll()

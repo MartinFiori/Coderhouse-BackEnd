@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Pokebola",
+    "specie": "poke bola",
+    "thumbnail": "http://localhost:8080/assets/1644517579228-pokebola.jpg",
+    "id": 1
+  },
+  {
+    "name": "picador",
+    "specie": "pica2",
+    "thumbnail": "http://localhost:8080/assets/1644517589413-picador.jpg",
+    "id": 2
+  },
+  {
+    "name": "noface",
+    "specie": "no face",
+    "thumbnail": "http://localhost:8080/assets/1644517596910-noface.jpg",
+    "id": 3
+  },
+  {
+    "name": "soporte celular",
+    "specie": "soporte",
+    "thumbnail": "http://localhost:8080/assets/1644520681636-celu.jpg",
+    "id": 4
+  },
+  {
+    "name": "neko",
+    "specie": "neko",
+    "thumbnail": "http://localhost:8080/assets/1644522432927-neko.jpg",
+    "id": 5
+  }
+]
