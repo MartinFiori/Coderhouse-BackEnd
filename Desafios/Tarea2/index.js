@@ -2,7 +2,7 @@ const userManager = require('./UserManager')
 
 const manager = new userManager()
 
-let user ={
+let user = {
     first_name: "asdf",
     last_name: "asdf",
     user_name: "lo de arriba es mentira",
@@ -10,7 +10,7 @@ let user ={
     mail: "semeescuchaoqueloque@outlook.com",
 }
 
-manager.findAllUsers().then(res=> console.table(res))
+manager.findAllUsers().then(res => console.table(res))
 
 // manager.deleteById(3).then(res=>console.log(res))
 
