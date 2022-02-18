@@ -1,0 +1,44 @@
+[
+  {
+    "name": "burger",
+    "stock": "123",
+    "thumbnail": "http://localhost:8080/assets/1645108312354-burger.jpg",
+    "id": 1
+  },
+  {
+    "name": "canastita",
+    "stock": "321",
+    "thumbnail": "http://localhost:8080/assets/1645108329760-canastitas.jpg",
+    "id": 2
+  },
+  {
+    "name": "empanada",
+    "stock": "234",
+    "thumbnail": "http://localhost:8080/assets/1645108344741-empanadas.jpg",
+    "id": 3
+  },
+  {
+    "name": "pizza",
+    "stock": "346",
+    "thumbnail": "http://localhost:8080/assets/1645108353698-pizza.jpg",
+    "id": 4
+  },
+  {
+    "name": "burger",
+    "stock": "124",
+    "thumbnail": "http://localhost:8080/assets/1645109419826-burger.jpg",
+    "id": 5
+  },
+  {
+    "name": "empanada",
+    "stock": "132",
+    "thumbnail": "http://localhost:8080/assets/1645109428118-empanadas.jpg",
+    "id": 6
+  },
+  {
+    "name": "shis",
+    "stock": "241",
+    "thumbnail": "http://localhost:8080/assets/1645109433886-shis.jpg",
+    "id": 7
+  }
+]
