@@ -17,6 +17,7 @@ class ProductsManager {
                         message: 'First product added'
                     };
                 }
+                console.log("probando")
                 product.id = products[products.length - 1].id + 1;
                 products.push(product);
                 await fs.promises.writeFile(productsPath, JSON.stringify(products, null, 2));

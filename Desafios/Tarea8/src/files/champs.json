@@ -1,0 +1,26 @@
+[
+  {
+    "name": "neeko",
+    "rol": "mid",
+    "img": "https://res.cloudinary.com/dax0wf30d/image/upload/v1643930407/gatitos_hvjvpr.jpg",
+    "id": 1
+  },
+  {
+    "name": "fiora",
+    "rol": "top",
+    "img": "https://res.cloudinary.com/dax0wf30d/image/upload/v1643930407/gatitos_hvjvpr.jpg",
+    "id": 2
+  },
+  {
+    "name": "vayne",
+    "rol": "adc",
+    "img": "https://res.cloudinary.com/dax0wf30d/image/upload/v1643930407/gatitos_hvjvpr.jpg",
+    "id": 3
+  },
+  {
+    "name": "nautilus",
+    "rol": "support",
+    "img": "https://res.cloudinary.com/dax0wf30d/image/upload/v1643930407/gatitos_hvjvpr.jpg",
+    "id": 4
+  }
+]

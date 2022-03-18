@@ -1,27 +1,18 @@
 const express = require('express');
 const router = express.Router();
 const ProductsManager = require('../managers/products');
-const uploader = require('../services/uploader');
-const axios = require('axios');
 
 const productService = new ProductsManager();
 
-const requestData = async ()=>{
-    const request = await fetch('../files/products.json');
-    console.log(request)
-    const data = await request.json();
-    console.log(data)
-    return data
-}
 router.get('/', (req, res) => {
     productService.getAllProducts().then(result => res.send(result))
 })
-router.get('/products', (req, res) => {
-    axios({
-        method:'GET',
-        url: '../files/products.json'
-    }).then(rta=>res.send(rta.data))
-    return {status: "successs", content: "rta.data"}
+router.get('/products', async (req, res) => {
+    const getData = await productService.getAllProducts();
+    const data = getData.payload;
+    res.render('products', {
+        products: data
+    });
 })
 
 router.post('/', uploader.single('file'), (req, res) => {
@@ -42,6 +33,7 @@ router.get('/:id', (req, res) => {
     productService.findProductById(req_id).then(prod => res.send(prod));
 })
 
+
 router.delete('/:id', (req, res) => {
     const req_id = req.params['id'];
     if (isNaN(req_id)) return res.status(500).send({
@@ -49,6 +41,5 @@ router.delete('/:id', (req, res) => {
     })
     productService.deleteById(req_id).then(prod => res.send(prod));
 })
-
 
 module.exports = router;
